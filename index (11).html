@@ -170,6 +170,39 @@
   .thanks{display:none;margin-top:24px;font-size:17px;color:#F0D38C;font-weight:600}
   .thanks.show{display:block}
 
+  /* what you'll learn */
+  .learn{background:#fff;border-top:1px solid var(--line)}
+  .learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 32px;margin-top:34px}
+  @media(max-width:700px){.learn-grid{grid-template-columns:1fr}}
+  .learn-item{display:flex;gap:13px;align-items:flex-start}
+  .learn-item .tick{width:27px;height:27px;border-radius:50%;background:#EAF1F4;color:var(--blue);flex:none;display:grid;place-items:center;margin-top:1px}
+  .learn-item .tick svg{width:15px;height:15px}
+  .learn-item p{font-size:15.5px;color:var(--ink);line-height:1.5}
+  .learn-item p b{color:var(--navy)}
+
+  /* about photo */
+  .about-photo{width:100%;max-width:300px;margin:0 auto;aspect-ratio:1/1;border-radius:20px;overflow:hidden;position:relative;background:var(--navy);box-shadow:var(--shadow)}
+  .about-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .about-photo .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:#fff;text-align:center;padding:22px}
+  .about-photo .ph svg{width:60px;height:60px}
+  .about-photo .ph .nm{font-family:"Spectral",serif;font-size:21px;font-weight:600}
+  .about-photo .ph .ti{font-size:12.5px;color:var(--gold);font-weight:600}
+  .about-photo .ph small{font-size:10.5px;color:#7E94A2;margin-top:8px;letter-spacing:.04em}
+
+  /* faq */
+  .faq{background:var(--paper)}
+  .faq-list{margin-top:30px;max-width:800px}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-family:"Spectral",serif;font-size:18px;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .pl{flex:none;width:22px;height:22px;position:relative}
+  .faq summary .pl::before,.faq summary .pl::after{content:"";position:absolute;background:var(--gold);border-radius:2px}
+  .faq summary .pl::before{left:0;right:0;top:10px;height:2px}
+  .faq summary .pl::after{top:0;bottom:0;left:10px;width:2px;transition:opacity .2s}
+  .faq details[open] summary .pl::after{opacity:0}
+  .faq .ans{padding:0 22px 20px;font-size:15.5px;color:var(--muted);line-height:1.6}
+  .faq .ans b{color:var(--ink)}
+
   footer{background:#19303f;color:#9FB6C4;padding:40px 0;font-size:13.5px}
   .foot-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
   footer a{color:#CFE0EA;text-decoration:underline;text-underline-offset:3px}
@@ -289,6 +322,26 @@
     </div>
   </section>
 
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="learn" id="learn">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow sec-eyebrow">What you'll walk away able to do</div>
+        <h2 class="sec-h">Real skills for the living room, not theory for an exam.</h2>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Read any child's development as a <b>connected web</b> — and know which foundation to build first.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Run a <b>60-minute home visit</b> with a confident open, middle, and close.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Coach a parent so the work continues <b>all week</b> — not just during your hour.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Tell the real difference between <b>education and therapy</b> — and teach parents it too.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Build skills in the <b>right order</b> instead of chasing every missed milestone at once.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Meet a child <b>where they are</b> and step them forward — 13 months, then 14, then 15.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Handle the hard moments: the <b>checked-out parent</b>, the kid who won't engage, the TV.</p></div>
+        <div class="learn-item reveal"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><p>Build a <b>caseload you can sustain</b> — scheduling that protects you from burnout.</p></div>
+      </div>
+    </div>
+  </section>
+
   <!-- WAYS IN -->
   <section class="ways" id="ways">
     <div class="wrap">
@@ -326,17 +379,61 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="wrap about-in">
-      <div class="about-card reveal">
-        <svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#284457"/><g stroke="#D8A840" stroke-width="1.5" fill="none"><path d="M20 9 L29 15.5 L25.6 27 L14.4 27 L11 15.5 Z"/><line x1="20" y1="20" x2="20" y2="9"/><line x1="20" y1="20" x2="29" y2="15.5"/><line x1="20" y1="20" x2="25.6" y2="27"/><line x1="20" y1="20" x2="14.4" y2="27"/><line x1="20" y1="20" x2="11" y2="15.5"/></g><g fill="#D8A840"><circle cx="20" cy="20" r="2.6"/><circle cx="20" cy="9" r="1.8"/><circle cx="29" cy="15.5" r="1.8"/><circle cx="25.6" cy="27" r="1.8"/><circle cx="14.4" cy="27" r="1.8"/><circle cx="11" cy="15.5" r="1.8"/></g></svg>
-        <div class="nm">Rachael Somerman</div>
-        <div class="ti">Founder, Unlimited Pediatric Therapy</div>
+      <div class="reveal">
+        <!-- TO ADD YOUR PHOTO: replace the whole <div class="ph">...</div> below with:
+             <img src="rachael.jpg" alt="Rachael Somerman" />  (drop rachael.jpg in the repo) -->
+        <div class="about-photo">
+          <div class="ph">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#284457"/><g stroke="#D8A840" stroke-width="1.5" fill="none"><path d="M20 9 L29 15.5 L25.6 27 L14.4 27 L11 15.5 Z"/><line x1="20" y1="20" x2="20" y2="9"/><line x1="20" y1="20" x2="29" y2="15.5"/><line x1="20" y1="20" x2="25.6" y2="27"/><line x1="20" y1="20" x2="14.4" y2="27"/><line x1="20" y1="20" x2="11" y2="15.5"/></g><g fill="#D8A840"><circle cx="20" cy="20" r="2.6"/><circle cx="20" cy="9" r="1.8"/><circle cx="29" cy="15.5" r="1.8"/><circle cx="25.6" cy="27" r="1.8"/><circle cx="14.4" cy="27" r="1.8"/><circle cx="11" cy="15.5" r="1.8"/></g></svg>
+            <div class="nm">Rachael Somerman</div>
+            <div class="ti">Founder, Unlimited Pediatric Therapy</div>
+            <small>ADD YOUR PHOTO HERE</small>
+          </div>
+        </div>
       </div>
       <div class="reveal">
         <div class="eyebrow sec-eyebrow">Who's behind it</div>
         <h2>Built by someone who saw the gap from the inside.</h2>
-        <p>Rachael founded Unlimited Pediatric Therapy after noticing how little real training existed for the people doing early intervention — and how many arrived from teaching with no roadmap for therapy in the home. She built a training program to fix it in 2019. EI Foundations is that work, opened up to providers everywhere.</p>
+        <p>Rachael founded Unlimited Pediatric Therapy in St. Petersburg, Florida, building a practice around the birth-to-three world of Early Steps and early intervention. Along the way she kept seeing the same thing: talented people stepping into EI — many straight from the classroom — with no real roadmap for doing therapy in a family's home.</p>
+        <p>So in 2019 she built training to fix it: the practical, in-the-living-room skills that no degree program and no state module ever taught. EI Foundations is that work, opened up to providers everywhere — taught by someone who runs the visits, coaches the parents, and knows exactly where new therapists get stuck.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow sec-eyebrow">Before you ask</div>
+        <h2 class="sec-h">The questions everyone has.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details>
+          <summary>Will this count toward my state's training requirement?<span class="pl"></span></summary>
+          <div class="ans">Most state EI programs accept documentation that you completed training, and you'll receive a <b>completion certificate</b> to keep for your records. Requirements vary by state and program, so always confirm the specifics with yours — but for most providers, a certificate like this is exactly what they're asked to show.</div>
+        </details>
+        <details>
+          <summary>Do I get a certificate?<span class="pl"></span></summary>
+          <div class="ans">Yes. You'll get a completion certificate you can download and submit as your training documentation.</div>
+        </details>
+        <details>
+          <summary>Who is this actually for?<span class="pl"></span></summary>
+          <div class="ans">Anyone working in early intervention — <b>developmental therapists, ITDS, EIS, developmental interventionists</b>, and the OTs, PTs, and SLPs who serve the birth-to-three world. It's especially built for people coming into EI from teaching, who know kids but were never taught the therapy side.</div>
+        </details>
+        <details>
+          <summary>Do I need to already be licensed or experienced?<span class="pl"></span></summary>
+          <div class="ans">No. It's designed for people stepping into early intervention — including straight from education. If you're brand new, this is the roadmap you were missing. If you're experienced, it's the framework and language to make what you do teachable.</div>
+        </details>
+        <details>
+          <summary>How is it delivered, and how long does it take?<span class="pl"></span></summary>
+          <div class="ans">Self-paced online lessons you take on your own schedule. Start with the signature course, then add the shorter mini-courses whenever you need a specific skill. The membership adds new trainings every month.</div>
+        </details>
+        <details>
+          <summary>Are there agency or group rates?<span class="pl"></span></summary>
+          <div class="ans">Yes — agencies can buy seats to train their staff. For group pricing, or any other question, just reach out and ask.</div>
+        </details>
       </div>
     </div>
   </section>
@@ -344,15 +441,15 @@
   <!-- CAPTURE -->
   <section class="capture" id="capture">
     <div class="wrap capture-in reveal">
-      <div class="eyebrow" style="color:var(--gold)">Doors opening soon</div>
-      <h2>Be first when <em>EI Foundations</em> opens.</h2>
-      <p>Drop your email and you'll be the first to know when the course and membership go live — plus a free resource or two while you wait.</p>
+      <div class="eyebrow" style="color:var(--gold)">Free cheat sheet + first dibs</div>
+      <h2>Get the <em>developmental web</em> cheat sheet.</h2>
+      <p>Drop your email and I'll send you the one-page foundations cheat sheet the moment it's ready — and you'll be first to know when the course and membership open.</p>
       <form class="form" id="signup" novalidate>
         <input type="email" id="email" placeholder="you@email.com" aria-label="Email address" required />
-        <button type="submit" class="btn btn-gold">Keep me posted</button>
+        <button type="submit" class="btn btn-gold">Send it my way</button>
       </form>
       <div class="thanks" id="thanks">You're on the list — talk soon. 🎉</div>
-      <div class="form-note">No spam, ever. Just the launch and the occasional free resource.</div>
+      <div class="form-note">No spam, ever. Just the cheat sheet, the launch, and the occasional free resource.</div>
     </div>
   </section>
 </main>
