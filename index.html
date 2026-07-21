@@ -264,7 +264,7 @@
         <p class="sub">EI Foundations is practical, on-the-job training for early intervention providers — parent coaching, the developmental web, session strategies, and the survival skills no degree or state module ever covered.</p>
         <div class="ctas">
           <a href="#ways" class="btn btn-gold">Explore the training</a>
-          <a href="#capture" class="btn btn-ghost">Get launch updates</a>
+          <a href="YOUR_PODIA_STORE_LINK" class="btn btn-ghost">Visit the store</a>
         </div>
         <div class="trust">Built by <b>Unlimited Pediatric Therapy</b> — training EI providers since 2019.</div>
       </div>
@@ -333,7 +333,7 @@
           <h3>Mini-courses</h3>
           <div class="price">$19<small> / each</small></div>
           <p class="blurb">Bite-size, practical deep-dives on one topic — motor, feeding, behavior, vision, and more. The easiest way to sample how this training works.</p>
-          <a href="#capture" class="btn btn-navy">Browse the minis</a>
+          <a href="YOUR_PODIA_STORE_LINK" class="btn btn-navy">Browse the minis</a>
         </div>
         <div class="tier feature reveal">
           <div class="flag">Founding price</div>
@@ -341,7 +341,7 @@
           <h3>The Craft &amp; The Medical Deep Dive</h3>
           <div class="price">$149<small> / each</small></div>
           <p class="blurb">Two full courses. <strong>The Craft</strong> — your first 90 days, from reading development to coaching parents. <strong>The Medical Deep Dive</strong> — complex kids and the hardest conversations. Yours forever, each with a certificate.</p>
-          <a href="#capture" class="btn btn-gold">Enroll at founding price</a>
+          <a href="YOUR_PODIA_STORE_LINK" class="btn btn-gold">Enroll at founding price</a>
           <p class="micro">Founding price — going to $199 each soon.</p>
         </div>
         <div class="tier reveal">
@@ -349,7 +349,7 @@
           <h3>The Complete Foundation</h3>
           <div class="price">$249<small> / once</small></div>
           <p class="blurb">Both courses together — the whole journey, from your first visit through the most complex cases and conversations. 25 modules. Save $50.</p>
-          <a href="#capture" class="btn btn-navy">Get the bundle</a>
+          <a href="YOUR_PODIA_STORE_LINK" class="btn btn-navy">Get the bundle</a>
         </div>
       </div>
       <p class="tier-note">A course certificate satisfies the training-documentation requirement for most state EI programs. Founding pricing is limited — course prices rise after launch.</p>
@@ -375,15 +375,11 @@
   <!-- CAPTURE -->
   <section class="capture" id="capture">
     <div class="wrap capture-in reveal">
-      <div class="eyebrow" style="color:var(--gold)">Doors opening soon</div>
-      <h2>Be first when <em>EI Foundations</em> opens.</h2>
-      <p>Drop your email and you'll be the first to know when the courses go live at founding-member pricing — plus a free resource or two while you wait.</p>
-      <form class="form" id="signup" novalidate>
-        <input type="email" id="email" placeholder="you@email.com" aria-label="Email address" required />
-        <button type="submit" class="btn btn-gold">Keep me posted</button>
-      </form>
-      <div class="thanks" id="thanks">You're on the list — talk soon. 🎉</div>
-      <div class="form-note">No spam, ever. Just the launch and the occasional free resource.</div>
+      <div class="eyebrow" style="color:var(--gold)">The doors are open</div>
+      <h2>Start building your <em>EI foundations</em> today.</h2>
+      <p>Every course and mini-course is ready now — practical training you can start using on your very next visit. Founding pricing is live for a limited time.</p>
+      <a href="YOUR_PODIA_STORE_LINK" class="btn btn-gold" style="margin-top:26px;display:inline-block">Visit the store</a>
+      <div class="form-note">Instant access · Yours forever · Certificate included</div>
     </div>
   </section>
 </main>
@@ -427,7 +423,7 @@
   // email capture (front-end only — wire to your email tool: see README)
   document.getElementById("signup").addEventListener("submit",function(e){
     e.preventDefault();
-    const email=document.getElementById("email");
+    const email=document.getElementById("email"); if(!email) return;
     if(!email.value || !email.value.includes("@")){email.focus();email.style.borderColor="#D8A840";return;}
     // TODO: replace this with your email provider (Mailchimp / ConvertKit / Formspree) form action or API call.
     this.style.display="none";
